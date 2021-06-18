@@ -34,7 +34,7 @@ import FontFamily from "@ckeditor/ckeditor5-font/src/fontfamily";
 import FontSize from "@ckeditor/ckeditor5-font/src/fontsize";
 import FontColor from "@ckeditor/ckeditor5-font/src/fontcolor";
 import FontBackgroundColor from "@ckeditor/ckeditor5-font/src/fontbackgroundcolor";
-import AllowStyleTags from "./allowStyleTags";
+import AllowCustomTag from "./allowStyleTags";
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -68,7 +68,8 @@ ClassicEditor.builtinPlugins = [
   FontSize,
   FontColor,
   FontBackgroundColor,
-  AllowStyleTags,
+  AllowCustomTag('style'),
+  AllowCustomTag('audio'),
 ];
 
 // Editor configuration.
