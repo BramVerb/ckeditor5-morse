@@ -1,7 +1,4 @@
-import Plugin from '@ckeditor/ckeditor5-core/src/plugin';
-
 export default function AllowStyleTags(editor) {
-  console.log(editor);
   editor.model.schema.register("style", {
     allowWhere: "$block",
     allowContentOf: "$root",
