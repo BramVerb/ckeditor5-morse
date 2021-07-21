@@ -16,6 +16,7 @@ import CKFinder from "@ckeditor/ckeditor5-ckfinder/src/ckfinder";
 import EasyImage from "@ckeditor/ckeditor5-easy-image/src/easyimage";
 import Heading from "@ckeditor/ckeditor5-heading/src/heading";
 import Image from "@ckeditor/ckeditor5-image/src/image";
+import ImageInsert from "@ckeditor/ckeditor5-image/src/imageinsert";
 import ImageCaption from "@ckeditor/ckeditor5-image/src/imagecaption";
 import ImageStyle from "@ckeditor/ckeditor5-image/src/imagestyle";
 import ImageToolbar from "@ckeditor/ckeditor5-image/src/imagetoolbar";
@@ -54,6 +55,7 @@ ClassicEditor.builtinPlugins = [
   ImageStyle,
   ImageToolbar,
   ImageUpload,
+  ImageInsert,
   Indent,
   Link,
   List,
@@ -93,7 +95,7 @@ ClassicEditor.defaultConfig = {
       "indent",
       "outdent",
       "|",
-      "imageUpload",
+      "imageInsert",
       "blockQuote",
       "insertTable",
       "mediaEmbed",
