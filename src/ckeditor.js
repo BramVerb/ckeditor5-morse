@@ -73,6 +73,7 @@ ClassicEditor.builtinPlugins = [
   AllowCustomTag('style'),
   AllowCustomTag('audio'),
   AllowCustomTag('video'),
+  AllowCustomTag('button'),
 ];
 
 // Editor configuration.
